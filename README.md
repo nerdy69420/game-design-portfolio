@@ -1,4 +1,3 @@
 # game-design-portfolio
 # //TODO
-# - Change font
-# - 
+- change font
