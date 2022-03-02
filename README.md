@@ -1,3 +1,4 @@
 # game-design-portfolio
 # //TODO
-- change font
+- Add profile
+- Add projects
