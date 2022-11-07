@@ -1659,3 +1659,9 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Custom */
+
+.credits {
+	list-style-type: square;
+}
