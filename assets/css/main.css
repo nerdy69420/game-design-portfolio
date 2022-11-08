@@ -1660,8 +1660,27 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* Custom */
+/* Custom rules */
 
 .credits {
 	list-style-type: square;
+}
+
+#backDesktop {
+	float: right;
+}
+
+#backMobile {
+	float: right;
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	#backDesktop {
+		display: none;
+	}
+	
+	#backMobile {
+		display: contents;
+	}
 }
