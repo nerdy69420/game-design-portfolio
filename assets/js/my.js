@@ -5,7 +5,8 @@ const climbingImages = [
     'images/rock-climbing-gym/2s.jpg',
     'images/rock-climbing-gym/3s.jpg',
     'images/rock-climbing-gym/4s.jpg',
-    'images/rock-climbing-gym/5s.jpg'
+    'images/rock-climbing-gym/5s.jpg',
+    'images/rock-climbing-gym/6s.jpg'
 ]
 const changelingImages = [
     'images/changeling/1s.png',
