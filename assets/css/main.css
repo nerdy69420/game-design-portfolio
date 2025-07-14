@@ -1675,6 +1675,14 @@ input, select, textarea {
 	display: none;
 }
 
+#imageButtonLeft {
+	position: absolute; top: -112px;
+}
+
+#imageButtonRight {
+	position: absolute; top: -112px; right: 0;
+}
+
 @media screen and (max-width: 480px) {
 	#backDesktop {
 		display: none;
@@ -1682,5 +1690,17 @@ input, select, textarea {
 	
 	#backMobile {
 		display: contents;
+	}
+
+	#imageButtonLeft {
+		position: initial;
+		display: inline-flexbox;
+		width: auto;
+	}
+
+	#imageButtonRight {
+		position: initial;
+		display: inline-flexbox;
+		width: auto;
 	}
 }

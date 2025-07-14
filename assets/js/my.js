@@ -19,7 +19,7 @@ const changelingImages = [
 
 let imageContainer = document.getElementById('rock-climbing-images');
 let imageCollection = climbingImages;
-let lastIndex = 1;
+let lastIndex = 0;
 let imgSrc = imageCollection[0];
 
 function changePictureRight(pImageContainer, pImageCollectionString)
@@ -27,12 +27,8 @@ function changePictureRight(pImageContainer, pImageCollectionString)
     setImageCollection(pImageCollectionString);
     imageContainer = pImageContainer;
 
-    if (lastIndex > (imageCollection.length - 1))
-    {
-        lastIndex = 1;
-    } else {
-        lastIndex++;
-    }
+    lastIndex++;
+    lastIndex = lastIndex % imageCollection.length;
     updatePicture(lastIndex);
 }
 
@@ -41,18 +37,17 @@ function changePictureLeft(pImageContainer, pImageCollectionString)
     setImageCollection(pImageCollectionString);
     imageContainer = pImageContainer;
 
-    if (lastIndex < 2)
-    {
-        lastIndex = imageCollection.length;
-    } else {
+    if (lastIndex == 0)
+        lastIndex = imageCollection.length - 1;
+    else
         lastIndex--;
-    }
+    lastIndex = lastIndex % imageCollection.length;    
     updatePicture(lastIndex);
 }
 
 function updatePicture(index)
 {
-    imgSrc = imageCollection[(index - 1)];
+    imgSrc = imageCollection[index];
     imageContainer.src = imgSrc;
 }
 

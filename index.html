@@ -91,8 +91,10 @@
 								<div id="climbing-images-div" style="display: flexbox;">
 									<span class="image main"><img id="changeling-images" src="images/changeling/1s.png" alt="in-game screenshot of changeling vr"/></span>
 									<ul class="actions" style="position: relative;">
-										<li style="position: absolute; top: -112px;"><a onclick="changePictureLeft(document.getElementById('changeling-images'), 'changelingImages')"; class="button">&larr; Last</a></li>
-										<li style="position: absolute; top: -112px; right: 0;"><a onclick="changePictureRight(document.getElementById('changeling-images'), 'changelingImages')"; class="button">Next &rarr;</a></li>
+										<li>
+											<a id="imageButtonLeft" onclick="changePictureLeft(document.getElementById('changeling-images'), 'changelingImages')"; class="button">&larr; Last</a>
+											<a id="imageButtonRight" onclick="changePictureRight(document.getElementById('changeling-images'), 'changelingImages')"; class="button">Next &rarr;</a>
+										</li>
 									</ul>
 								</div>
 								<p>Changeling is a VR narrative mystery game created by RIT students from the School of Interactive Games and Media and the College of Art and Design. The narrative follows a private investigator named Aurelia Walker, who possesses a supernatural power allowing her to see another person's thoughts after touching them. She receives a phone call from a concerned mother inquiring about changes she noticed in her infant, Tobi. She pleads with Aurelia to find out what's causing her baby to act unusual. Aurelia soon finds out that she herself is not so usual either, and must confront her true identity as she uncovers the evil force responsible for her troubles.</p>
@@ -119,8 +121,10 @@
 								<div id="climbing-images-div" style="display: flexbox;">
 									<span class="image main"><img id="rock-climbing-images" src="images/rock-climbing-gym/1s.jpg" alt="in-game screenshot of rock climbing gym"/></span>
 									<ul class="actions" style="position: relative;">
-										<li style="position: absolute; top: -112px;"><a onclick="changePictureLeft(document.getElementById('rock-climbing-images'), 'climbingImages')"; class="button">&larr; Last</a></li>
-										<li style="position: absolute; top: -112px; right: 0;"><a onclick="changePictureRight(document.getElementById('rock-climbing-images'), 'climbingImages')"; class="button">Next &rarr;</a></li>
+										<li>
+											<a id="imageButtonLeft" onclick="changePictureLeft(document.getElementById('rock-climbing-images'), 'climbingImages')"; class="button">&larr; Last</a>
+											<a id="imageButtonRight" onclick="changePictureRight(document.getElementById('rock-climbing-images'), 'climbingImages')"; class="button">Next &rarr;</a>
+										</li>
 									</ul>
 								</div>
 								<p>Blade & Sorcery is a VR fantasy sword fighting game developed by Warp Frog. One of the core gameplay features is the ability to climb any static object with a collider component. I noticed there weren't many maps that primarily focused on the climbing aspect of the game, so I put together a small map with many different things to climb.<br>The highlight of the map is an aircraft hangar outfitted with rock climbing walls and an indoor ropes course. Outside the hangar are a few areas with props I thought would be fun to climb on, such as shipping containers, broadcast towers, concrete tubes, and a couple other industrial-themed props.</p>
